@@ -1,0 +1,63 @@
+{
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[powershell]": {
+        "editor.defaultFormatter": "ms-vscode.powershell"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "breadcrumbs.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.autoIndent": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.highlightActiveIndentGuide": true,
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderLineHighlight": "line",
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [64, 128, 152],
+    "editor.suggestSelection": "first",
+    "editor.trimAutoWhitespace": true,
+    "editor.wrappingIndent": "deepIndent",
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+        "markdown": "html"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.ps1xml": "xml",
+        "*.psd1": "powershell"
+    },
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "powershell.codeFolding.showLastLine": false,
+    "powershell.codeFormatting.ignoreOneLineBlock": false,
+    "powershell.codeFormatting.openBraceOnSameLine": false,
+    "powershell.codeFormatting.whitespaceBeforeOpenBrace": false,
+    "powershell.integratedConsole.focusConsoleOnExecute": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "rewrap.wrappingColumn": 64,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.experimentalRefreshOnResume": true,
+    "terminal.integrated.rendererType": "auto",
+    "terminal.integrated.scrollback": 9999,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "trailing-spaces.trimOnSave": true,
+    "window.zoomLevel": 0,
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#d7d9db0e"
+    },
+    "workbench.colorTheme": "Blink Contrast (rainglow)",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "always",
+    "xmlTools.xmlFormatterImplementation": "v2"
+}

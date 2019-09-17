@@ -1,0 +1,71 @@
+
+// Available variables which can be used inside of strings.
+// ${workspaceRoot}: the root folder of the team
+// ${file}: the current opened file
+// ${relativeFile}: the current opened file relative to workspaceRoot
+// ${fileBasename}: the current opened file's basename
+// ${fileDirname}: the current opened file's dirname
+// ${fileExtname}: the current opened file's extension
+// ${cwd}: the current working directory of the spawned process
+
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "0.1.0",
+
+	// Start PowerShell
+	"windows": {
+		"command": "${env:windir}/System32/WindowsPowerShell/v1.0/powershell.exe",
+		"args": [ "-NoProfile", "-ExecutionPolicy", "Bypass" ]
+	},
+	"linux": {
+		"command": "/usr/bin/pwsh",
+		"args": [ "-NoProfile" ]
+	},
+	"osx": {
+		"command": "/usr/local/bin/pwsh",
+		"args": [ "-NoProfile" ]
+	},
+
+	// The command is a shell script
+	"isShellCommand": true,
+
+	// Show the output window always
+	"showOutput": "always",
+
+	// Associate with test task runner
+	"tasks": [
+		{
+			"taskName": "Clean",
+			"suppressTaskName": true,
+			"showOutput": "always",
+			"args": [
+				"Write-Host 'Cleaning the .\\release folder...';",
+				"Invoke-Build -Task Clean;",
+				"Invoke-Command { Write-Host 'Completed cleaning the .\\release folder.'; };"
+			]
+		},
+		{
+			"taskName": "Build",
+			"suppressTaskName": true,
+			"isBuildCommand": true,
+			"showOutput": "always",
+			"args": [
+				"Write-Host 'Building the module...';",
+				"Invoke-Build;",
+				"Invoke-Command { Write-Host 'Completed building the module. Output in .\\release'; };"
+			]
+		},
+		{
+			"taskName": "Import",
+			"suppressTaskName": true,
+			"isBuildCommand": true,
+			"showOutput": "always",
+			"args": [
+				"Write-Host 'Importing the module...';",
+				"Invoke-Build -Task Import;",
+				"Invoke-Command { Write-Host 'Completed Importing the module from Output in .\\release'; };"
+			]
+		}
+	]
+}
