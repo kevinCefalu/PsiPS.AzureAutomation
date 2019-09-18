@@ -38,11 +38,14 @@ function Publish-Runbook
         [string] $Name,
 
         [Parameter()]
+        [ValidateSet('PowerShell', 'PowerShellWorkflow')]
+        [string] $Type = 'PowerShell',
+
+        [Parameter()]
         [string] $Description,
 
         [Parameter()]
-        [ValidateSet('PowerShell', 'PowerShellWorkflow')]
-        [string] $Type = 'PowerShell',
+        [HashTable] $Tags,
 
         [Parameter()]
         [switch] $LogVerbose,
@@ -52,9 +55,6 @@ function Publish-Runbook
 
         [Parameter()]
         [switch] $AsDraft,
-
-        [Parameter()]
-        [HashTable] $Tags,
 
         [Parameter()]
         [switch] $Force
