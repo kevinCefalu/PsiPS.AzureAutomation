@@ -41,8 +41,8 @@ function Get-RunbookJobOutput
     #endregion Parameter Splatting(s)
 
     $Stopwatch = [Diagnostics.Stopwatch]::StartNew();
-    $JobStreams = [Collections.Generic.List[JobStream]]::new();
-    $JobStreamRecords = [Collections.Generic.List[JobStreamRecord]]::new();
+    $JobStreams = [Collections.Generic.List[Microsoft.Azure.Commands.Automation.Model.JobStream]]::new();
+    $JobStreamRecords = [Collections.Generic.List[Microsoft.Azure.Commands.Automation.Model.JobStreamRecord]]::new();
 
     if ($IncludeVerboseStreams.IsPresent)
     {
@@ -63,7 +63,7 @@ function Get-RunbookJobOutput
 
         if ($null -ne $JobStreams_Temp -and $JobStreams_Temp.Count -gt 0)
         {
-            $JobStreams.AddRange(([JobStream[]] $JobStreams_Temp));
+            $JobStreams.AddRange(([Microsoft.Azure.Commands.Automation.Model.JobStream[]] $JobStreams_Temp));
         }
     }
     else
@@ -98,7 +98,7 @@ function Get-RunbookJobOutput
 
             if ($null -ne $JobStreams_Temp -and $JobStreams_Temp.Count -gt 0)
             {
-                $JobStreams.AddRange(([JobStream[]] $JobStreams_Temp));
+                $JobStreams.AddRange(([Microsoft.Azure.Commands.Automation.Model.JobStream[]] $JobStreams_Temp));
             }
         }
     }
