@@ -9,7 +9,7 @@
 	RootModule = 'PsiPS.AzureAutomation';
 
 	# Version number of this module.
-	ModuleVersion = '0.2.0';
+	ModuleVersion = '0.3.0';
 
 	# Supported PSEditions
 	# CompatiblePSEditions = @();
@@ -99,13 +99,13 @@
 
 		PSData = @{
 			# Tags applied to this module. These help with module discovery in online galleries.
-			# Tags = @();
+			Tags = @('Azure', 'Automation', 'Runbook');
 
 			# A URL to the license for this module.
-			# LicenseUri = '';
+			LicenseUri = 'https://github.com/kevinCefalu/PsiPS.AzureAutomation/blob/master/license.txt';
 
 			# A URL to the main website for this project.
-			# ProjectUri = '';
+			ProjectUri = 'https://github.com/kevinCefalu/PsiPS.AzureAutomation';
 
 			# A URL to an icon representing this module.
 			# IconUri = '';
