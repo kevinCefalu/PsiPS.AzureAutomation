@@ -59,8 +59,8 @@ function Start-RunbookJob
         $AverageRunTime = ($JobHistory.RunTime `
             | Measure-Object -Average -Property TotalSeconds).Average;
 
-        Write-Verbose "Average RunTime for '$RunbookName'" +
-            "is $([Math]::Round($AverageRunTime, 2))";
+        Write-Verbose ("Average RunTime for '$RunbookName'" +
+            "is $([Math]::Round($AverageRunTime, 2))");
     }
 
     if ($ShowProgress.IsPresent)
@@ -70,8 +70,8 @@ function Start-RunbookJob
 
         $WriteProgressParameters = @{
             Activity = "Executing Runbook: $RunbookName";
-            StatusMessage = { "JobId: $($RunbookJob.JobId); " +
-                "Time Elapsed: $(Format-TimeSpan $Stopwatch.Elapsed)" };
+            StatusMessage = { ("JobId: $($RunbookJob.JobId); " +
+                "Time Elapsed: $(Format-TimeSpan $Stopwatch.Elapsed)") };
             PercentComplete = { (100 - $RemainingProgress) };
         };
     }

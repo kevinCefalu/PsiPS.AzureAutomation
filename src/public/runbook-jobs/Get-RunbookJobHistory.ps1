@@ -35,8 +35,8 @@ function Get-RunbookJobHistory
 
             if ($ThirtyDaysAgo -gt $_)
             {
-                throw "StartDateTime must be greater than, or equal to, 30 days ago.`n" +
-                    "Received: $($_.ToString()); Expected >=: $($ThirtyDaysAgo.ToString())";
+                throw ("StartDateTime must be greater than, or equal to, 30 days ago.`n" +
+                    "Received: $($_.ToString()); Expected >=: $($ThirtyDaysAgo.ToString())");
 
                 return $false;
             }
@@ -52,8 +52,8 @@ function Get-RunbookJobHistory
 
             if ($Now -lt $_)
             {
-                throw "EndDateTime must be less than, or equal to, now.`n" +
-                    "Received: $($_.ToString()); Expected >=: $($Now.ToString())";
+                throw ("EndDateTime must be less than, or equal to, now.`n" +
+                    "Received: $($_.ToString()); Expected >=: $($Now.ToString())");
 
                 return $false;
             }
