@@ -2,5 +2,5 @@
 Use this module to work with Azure Automation Accounts.
 
 ## Status
-- ![PowerShell Gallery](https://img.shields.io/powershellgallery/v/PsiPS.AzureAutomation?color=Green&label=PSGallery%3A%20Version&style=for-the-badge)
-- ![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/PsiPS.AzureAutomation?color=Green&label=PSGallery%3A%20Downloads&style=for-the-badge)
+- [![PSGallery Version](https://img.shields.io/powershellgallery/v/PsiPS.AzureAutomation?color=Blue&label=PSGallery%20Version&logo=PowerShell&style=for-the-badge)](https://www.powershellgallery.com/packages/PsiPS.AzureAutomation/)
+- [![PSGallery Downloads](https://img.shields.io/powershellgallery/dt/PsiPS.AzureAutomation?color=Blue&label=PSGallery%20Downloads&logo=PowerShell&style=for-the-badge)](https://www.powershellgallery.com/packages/PsiPS.AzureAutomation/)
