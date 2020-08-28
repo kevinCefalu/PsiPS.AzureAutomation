@@ -21,15 +21,15 @@
 
     # Use IncludeRules when you want to run only a subset of the default rule set.
     # IncludeRules = @(
-    #	'PSAvoidDefaultValueSwitchParameter',
-    #	'PSMisleadingBacktick',
-    #	'PSMissingModuleManifestField',
-    #	'PSReservedCmdletChar',
-    #	'PSReservedParams',
-    #	'PSShouldProcess',
-    #	'PSUseApprovedVerbs',
-    #	'PSAvoidUsingCmdletAliases',
-    #	'PSUseDeclaredVarsMoreThanAssignments'
+    #    'PSAvoidDefaultValueSwitchParameter',
+    #    'PSMisleadingBacktick',
+    #    'PSMissingModuleManifestField',
+    #    'PSReservedCmdletChar',
+    #    'PSReservedParams',
+    #    'PSShouldProcess',
+    #    'PSUseApprovedVerbs',
+    #    'PSAvoidUsingCmdletAliases',
+    #    'PSUseDeclaredVarsMoreThanAssignments'
     # );
 
     # Use ExcludeRules when you want to run most of the default set of rules except for a few rules you wish to "exclude".
@@ -44,8 +44,8 @@
     );
 
     # ExcludeRules = @(
-    # 	'PSAvoidUsingPlainTextForPassword',
-    # 	'PSAvoidUsingUserNameAndPassWordParams'
+    #     'PSAvoidUsingPlainTextForPassword',
+    #     'PSAvoidUsingUserNameAndPassWordParams'
     # );
 
     # You can use the following entry to supply parameters to rules that take parameters.
